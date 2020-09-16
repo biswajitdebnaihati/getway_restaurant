@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "917443766734",
+    "firebase_url": "https://restaurantappproject-8312b.firebaseio.com",
+    "project_id": "restaurantappproject-8312b",
+    "storage_bucket": "restaurantappproject-8312b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917443766734:android:a9e03f526199644d41639f",
+        "android_client_info": {
+          "package_name": "com.exno.mygetwayrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917443766734-8d2fdnkm8tdh7foaf9ql44tiv8lka40t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exno.mygetwayrestaurant",
+            "certificate_hash": "5b876ea274008ea43a7ef4afb24945f46662c2ff"
+          }
+        },
+        {
+          "client_id": "917443766734-r0n1jmvvjrj1i7a2kjc0l4druj33ntok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8Rn8A1oRyiz3UVrcPOoxcZMh6mNTMOZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917443766734-r0n1jmvvjrj1i7a2kjc0l4druj33ntok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

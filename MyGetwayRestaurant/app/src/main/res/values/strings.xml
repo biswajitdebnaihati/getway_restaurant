@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Getwayindia restaurants</string>
+    <string name="SESSION">MyRestaurent</string>
+    <string name="Rid">Rid</string>
+    <string name="Res_auth_id">Res_auth_id</string>
+    <string name="Rname">Rname</string>
+    <string name="Email">Email</string>
+    <string name="Contact_no">Contact_no</string>
+    <string name="Last_login">Last_login</string>
+    <string name="on_off_status">onoffstatus</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="baseurl">https://youaudio.in/food2/restaurantapi/</string>
+    <string name="baseurl_second">https://youaudio.in/food2/api/</string>
+    <string name="baseurl_img">https://youaudio.in/food2/assets/dist/img/</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="file_name">latlon</string>
+    <string name="MapAPIurlcall">http://77.104.161.68/~getwayin/food_delivery/</string>
+
+</resources>

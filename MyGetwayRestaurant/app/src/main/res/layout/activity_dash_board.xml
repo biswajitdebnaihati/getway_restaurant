@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+   <LinearLayout
+       android:visibility="gone"
+       android:orientation="horizontal"
+       android:id="@+id/headre"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@color/colorPrimary">
+
+
+   </LinearLayout>
+<ScrollView
+    android:layout_below="@+id/headre"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      >
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <TextView
+             android:id="@+id/r_name_header"
+             android:textColor="#000"
+             android:textSize="23sp"
+             android:textStyle="bold"
+             android:textAllCaps="true"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="RESTAURANT NAME"/>
+         <TextView
+             android:id="@+id/autho_id"
+             android:textColor="#272727"
+             android:textStyle="normal"
+             android:textAllCaps="true"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text=""/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="200dp">
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:layout_weight=".1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+             >
+               <ImageView
+                   android:layout_gravity="center"
+                   android:layout_width="fill_parent"
+                   android:layout_height="80dp"
+                   app:srcCompat="@drawable/ic_business_and_finance"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:id="@+id/total_earnint_t"
+                   android:textColor="#000"
+                   android:text="₹"
+                   android:layout_width="match_parent"
+                   android:layout_height="fill_parent" />
+               <TextView
+                   android:layout_gravity="center"
+                   android:gravity="center"
+
+                   android:textColor="#000"
+                   android:text="Total Earning"
+                   android:layout_width="match_parent"
+                   android:layout_height="fill_parent" />
+            </LinearLayout>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:layout_weight=".1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                >
+               <ImageView
+                   android:layout_gravity="center"
+                   android:layout_width="fill_parent"
+                   android:layout_height="80dp"
+                   app:srcCompat="@drawable/ic_payment"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:id="@+id/total_due_t"
+                   android:textColor="#000"
+                   android:text=""
+                   android:layout_width="match_parent"
+                   android:layout_height="fill_parent" />
+               <TextView
+                   android:layout_gravity="center"
+                   android:gravity="center"
+
+                   android:textColor="#000"
+                   android:text="Due amount"
+                   android:layout_width="match_parent"
+                   android:layout_height="fill_parent" />
+            </LinearLayout>
+         </LinearLayout>
+      </LinearLayout>
+      <RelativeLayout
+
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          >
+         <Button
+             android:layout_margin="5dp"
+             android:id="@+id/rest_btn"
+             android:layout_alignParentRight="true"
+             android:text=""
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"/>
+      </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <ImageView
+       android:visibility="gone"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/did_loader"
+       android:layout_width="200dp"
+       android:layout_height="40dp"/>
+</RelativeLayout>
+
+
+      <RelativeLayout
+
+          android:id="@+id/container_noti"
+          android:layout_margin="10dp"
+          android:background="@drawable/bordershape"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <RelativeLayout
+             android:layout_margin="10dp"
+             android:orientation="horizontal"
+             android:id="@+id/c1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/delvery_boy_"
+                android:text="Delivery Boy details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:id="@+id/order_id"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+         </RelativeLayout>
+
+
+
+         <RelativeLayout
+
+             android:layout_below="@+id/c1"
+             android:id="@+id/container_driver_details"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <android.support.v4.widget.NestedScrollView
+                 android:id="@+id/c2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:fillViewport="true"
+                 android:layout_marginBottom="20dp"
+                 android:padding="10dp">
+
+
+                 <android.support.v7.widget.RecyclerView
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:tools="http://schemas.android.com/tools"
+                     android:id="@+id/recyclerView_driver_list"
+                     android:layout_width="match_parent"
+                     android:layout_height="200dp"
+                     android:scrollbars="vertical">
+
+                 </android.support.v7.widget.RecyclerView>
+             </android.support.v4.widget.NestedScrollView>
+
+
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+   <RelativeLayout
+       android:orientation="vertical"
+       android:layout_margin="10dp"
+       android:background="@drawable/bordershape"
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+      <android.support.v7.widget.RecyclerView
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/recyclerView_on_process"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:scrollbars="vertical"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:visibility="gone"
+          >
+
+      </android.support.v7.widget.RecyclerView>
+      <ImageView
+          android:src="@drawable/rest_back"
+          android:id="@+id/desearch_img"
+          android:layout_margin="2dp"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+         android:scaleType="fitXY"/>
+      <LinearLayout
+          android:background="@drawable/bordershape"
+          android:id="@+id/detals"
+          android:visibility="gone"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:orientation="vertical">
+         <TextView
+             android:text="Hide"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"
+             android:id="@+id/hide"/>
+         <TextView
+             android:id="@+id/cown_down_new"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:layout_gravity="center_horizontal"
+             android:gravity="center_horizontal"
+             android:textColor="#000"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text=""/>
+      </LinearLayout>
+   </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight=".1"
+          android:background="@drawable/bordershape">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+
+             >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/ic_smartphone_delivert"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="#000"
+                android:text="Total order to day"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/t_order_t"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#2196F3"
+                android:text="50"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+         </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight=".1"
+          android:background="@drawable/bordershape">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+
+             >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/ic_money_cancel"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="#000"
+                android:text="Total cancel today"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/t_cancel_t"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#2196F3"
+                android:text="19"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+         </LinearLayout>
+      </LinearLayout>
+
+
+   </LinearLayout>
+</LinearLayout>
+      <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight=".1"
+          android:background="@drawable/bordershape">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+
+             >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/ic_order_food"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="#000"
+                android:text="Total order delivered"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/tdelivert_t"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#2196F3"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+         </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:visibility="gone"
+          android:layout_margin="10dp"
+          android:layout_width="0dp"
+          android:layout_height="fill_parent"
+          android:layout_weight=".1"
+          android:background="@drawable/bordershape">
+         <LinearLayout
+
+             android:orientation="vertical"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+
+             >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/ic_money_cancel"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="23sp"
+                android:textColor="#000"
+                android:text="Total cancel today"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+         </LinearLayout>
+      </LinearLayout>
+
+
+   </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

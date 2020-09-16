@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/border"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:textColor="#000"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#2196F3"
+        android:id="@+id/cowndown"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"/>
+    <TextView
+
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:text="Done"
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
